@@ -32,6 +32,11 @@ public class Trip {
          */
     }
 
+    public void cancel() {
+        itinerary.cancel();
+        ticketList.clear();
+
+    }
     public Group getGroup() {
         return group;
     }
@@ -52,4 +57,5 @@ public class Trip {
                 ", ticketList=" + ticketList +
                 '}';
     }
+
 }

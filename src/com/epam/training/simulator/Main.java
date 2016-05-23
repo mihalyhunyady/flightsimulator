@@ -26,8 +26,8 @@ public class Main {
         buyTrip(bookedTrip);
         System.out.println(tesztnyulak);
 
-        cancelTrip(bookedTrip);
-        System.out.println(tesztnyulak);
+        bookedTrip = cancelTrip(bookedTrip);
+        System.out.println("canceled:" + bookedTrip);
         Trip bookedTrip2 = bookTrip(tesztnyulak, 5);
 
         System.out.println(bookedTrip2);
@@ -59,8 +59,10 @@ public class Main {
         trip.group.travel(trip.getItinerary().getMiles(), trip.getItinerary().getPoints());
     }
 
-    private static void cancelTrip(Trip trip) {
+    private static Trip cancelTrip(Trip trip) {
         trip.group.travel(-trip.getItinerary().getMiles(), -trip.getItinerary().getPoints());
+        trip.cancel();
+        return trip;
     }
 
 

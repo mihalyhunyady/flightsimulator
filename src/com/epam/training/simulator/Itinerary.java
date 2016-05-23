@@ -32,4 +32,8 @@ public class Itinerary {
                 "flightList=" + flightList +
                 '}';
     }
+
+    public void cancel() {
+        flightList.clear();
+    }
 }

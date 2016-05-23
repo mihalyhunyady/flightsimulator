@@ -7,6 +7,7 @@ import java.util.List;
 
 public class Itinerary {
     private final List<Flight> flightList;
+    Flight[] array;
 
     public Itinerary(List<Flight> flightList) {
         this.flightList = flightList;

@@ -14,6 +14,7 @@ public class Trip {
     Group group;
     Itinerary itinerary;
     List<Ticket> ticketList;
+    Ticket[] array;
 
     public Trip(Group group, Itinerary itinerary, List<Ticket> tickets) {
         this.itinerary = itinerary;

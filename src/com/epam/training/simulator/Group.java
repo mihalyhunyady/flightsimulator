@@ -16,4 +16,18 @@ public class Group {
         }
 
     }
+
+    public void travel(long miles, double points) {
+        for (Passenger p : passengerList) {
+            p.addMiles(miles);
+            p.addPoints(points);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Group{" +
+                "passengerList=" + passengerList +
+                '}';
+    }
 }

@@ -32,5 +32,12 @@ public class Trip {
          */
     }
 
-
+    @Override
+    public String toString() {
+        return "Trip{" +
+                "group=" + group +
+                ", itinerary=" + itinerary +
+                ", ticketList=" + ticketList +
+                '}';
+    }
 }

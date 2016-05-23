@@ -10,4 +10,19 @@ public class Passenger {
         this.Id = Id;
     }
 
+    public void addMiles(long miles) {
+        fFState.addMiles(miles);
+    }
+
+    public void addPoints(double point) {
+        fFState.addPoints(point);
+    }
+
+    @Override
+    public String toString() {
+        return "Passenger{" +
+                "fFState=" + fFState +
+                ", Id=" + Id +
+                '}';
+    }
 }

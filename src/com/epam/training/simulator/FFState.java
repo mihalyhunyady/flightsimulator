@@ -18,7 +18,7 @@ public class FFState {
         this.miles+=miles;
     }
 
-    public void addPoints(long points){
+    public void addPoints(double points) {
         this.points+=points;
     }
 
@@ -26,4 +26,11 @@ public class FFState {
         return new FFProgram().calculateDiscount(points);
     }
 
+    @Override
+    public String toString() {
+        return "FFState{" +
+                "miles=" + miles +
+                ", points=" + points +
+                '}';
+    }
 }

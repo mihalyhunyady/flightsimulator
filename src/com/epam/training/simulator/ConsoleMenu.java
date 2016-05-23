@@ -2,9 +2,6 @@ package com.epam.training.simulator;
 
 import java.util.Scanner;
 
-/**
- * Created by Mihaly_Hunyady on 5/23/2016.
- */
 public class ConsoleMenu {
 
     public void startConsole() {

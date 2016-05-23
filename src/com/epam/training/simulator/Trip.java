@@ -32,6 +32,18 @@ public class Trip {
          */
     }
 
+    public Group getGroup() {
+        return group;
+    }
+
+    public Itinerary getItinerary() {
+        return itinerary;
+    }
+
+    public List<Ticket> getTicketList() {
+        return ticketList;
+    }
+
     @Override
     public String toString() {
         return "Trip{" +

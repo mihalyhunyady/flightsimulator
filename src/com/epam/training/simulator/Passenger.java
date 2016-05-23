@@ -5,4 +5,6 @@ package com.epam.training.simulator;
  */
 public class Passenger {
     private int ID;
+    FFState FFState;
+
 }

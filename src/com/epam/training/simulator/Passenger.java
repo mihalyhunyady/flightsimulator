@@ -2,7 +2,12 @@ package com.epam.training.simulator;
 
 
 public class Passenger {
-    FFState FFState;
-    private int ID;
+    FFState fFState;
+    private int Id;
+
+    public Passenger(int Id) {
+        this.fFState = new FFState();
+        this.Id = Id;
+    }
 
 }

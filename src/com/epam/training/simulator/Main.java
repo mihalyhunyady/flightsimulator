@@ -41,9 +41,9 @@ public class Main {
         }
     }
 
-    private static Trip bookTrip(Group group, int numberOfTransfer) {
+    private static Trip bookTrip(Group group, int numberOfTransfers) {
         Collections.shuffle(flights);
-        Itinerary itinerary = new Itinerary(flights.subList(0, numberOfTransfer));
+        Itinerary itinerary = new Itinerary(flights.subList(0, numberOfTransfers));
 
         List<Ticket> tickets = itinerary.getFlights().stream().map(Ticket::new).collect(Collectors.toList());
 

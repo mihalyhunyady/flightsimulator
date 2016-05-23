@@ -61,11 +61,11 @@ public class Main {
     }
 
     private static void buyTrip(Trip trip) {
-        trip.group.travel(trip.getItinerary().getMiles(), trip.getItinerary().getPoints());
+        trip.getGroup().travel(trip.getItinerary().getMiles(), trip.getItinerary().getPoints());
     }
 
     private static Trip cancelTrip(Trip trip) {
-        trip.group.travel(-trip.getItinerary().getMiles(), -trip.getItinerary().getPoints());
+        trip.getGroup().travel(-trip.getItinerary().getMiles(), -trip.getItinerary().getPoints());
         trip.cancel();
         return trip;
     }

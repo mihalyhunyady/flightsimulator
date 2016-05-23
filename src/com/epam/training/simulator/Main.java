@@ -14,8 +14,25 @@ public class Main {
         //ConsoleMenu menu = new ConsoleMenu();
         //menu.startConsole();
         addSomeFlights(10);
-        Trip bookedTrip = bookTrip(egynyul, 2);
+        Trip bookedTrip = bookTrip(tesztnyulak, 5);
+
+        System.out.println(bookedTrip);
+        System.out.println("ár: " + bookedTrip.fare());
+        System.out.println(tesztnyulak);
+
         buyTrip(bookedTrip);
+        buyTrip(bookedTrip);
+        buyTrip(bookedTrip);
+        buyTrip(bookedTrip);
+        System.out.println(tesztnyulak);
+
+        cancelTrip(bookedTrip);
+        System.out.println(tesztnyulak);
+        Trip bookedTrip2 = bookTrip(tesztnyulak, 5);
+
+        System.out.println(bookedTrip2);
+        System.out.println("ár: " + bookedTrip2.fare());
+        System.out.println(tesztnyulak);
     }
 
     private static void addSomeFlights(int numberOfFlights) {

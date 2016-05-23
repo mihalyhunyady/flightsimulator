@@ -8,7 +8,7 @@ public class Flight {
 
     public Flight() {
         Random rnd = new Random();
-        this.miles = rnd.nextInt(100000000) + 1;
+        this.miles = rnd.nextInt(10) + 1;
     }
 
     public long getMiles() {

@@ -10,7 +10,7 @@ public class Ticket {
 
     public Ticket(Flight flight) {
         Random rnd = new Random();
-        this.price = rnd.nextInt(10000) + 1;
+        this.price = rnd.nextInt(10) + 1;
         this.flight = flight;
     }
 

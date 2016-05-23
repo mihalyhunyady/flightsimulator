@@ -12,7 +12,7 @@ public class Group {
         passengerList = new ArrayList<>();
         Random rnd = new Random();
         for (int i = 0; i < numberOfPassengers; i++) {
-            passengerList.add(new Passenger(rnd.nextInt(1000000) + 1));
+            passengerList.add(new Passenger(rnd.nextInt(10) + 1));
         }
 
     }

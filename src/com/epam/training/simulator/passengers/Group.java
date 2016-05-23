@@ -1,4 +1,4 @@
-package com.epam.training.simulator;
+package com.epam.training.simulator.passengers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +33,10 @@ public class Group {
             p.addMiles(miles);
             p.addPoints(points);
         }
+    }
+
+    public List<Passenger> getPassengerList() {
+        return passengerList;
     }
 
     @Override

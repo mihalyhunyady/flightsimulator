@@ -1,5 +1,7 @@
-package com.epam.training.simulator;
+package com.epam.training.simulator.trip.itinerary;
 
+
+import com.epam.training.simulator.trip.Flight;
 
 import java.util.List;
 

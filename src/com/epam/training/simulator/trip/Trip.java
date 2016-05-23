@@ -1,5 +1,9 @@
-package com.epam.training.simulator;
+package com.epam.training.simulator.trip;
 
+
+import com.epam.training.simulator.passengers.Group;
+import com.epam.training.simulator.passengers.Passenger;
+import com.epam.training.simulator.trip.itinerary.Itinerary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +23,8 @@ public class Trip {
 
     public double fare() {
         List<Double> tempPrices = new ArrayList<>();
-        for (Passenger p : group.passengerList) {
-            tempPrices.addAll(ticketList.stream().map(ticket -> p.fFState.getDiscount() * ticket.getPrice()).collect(Collectors.toList()));
+        for (Passenger p : group.getPassengerList()) {
+            tempPrices.addAll(ticketList.stream().map(ticket -> p.getfFState().getDiscount() * ticket.getPrice()).collect(Collectors.toList()));
         }
         return tempPrices.stream().mapToDouble(a -> a).average().getAsDouble();
         /*
@@ -37,6 +41,7 @@ public class Trip {
         ticketList.clear();
 
     }
+
     public Group getGroup() {
         return group;
     }

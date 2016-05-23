@@ -1,4 +1,4 @@
-package com.epam.training.simulator;
+package com.epam.training.simulator.trip;
 
 
 import java.util.Random;

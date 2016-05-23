@@ -1,5 +1,7 @@
-package com.epam.training.simulator;
+package com.epam.training.simulator.passengers;
 
+
+import com.epam.training.simulator.passengers.ffprogram.FFState;
 
 public class Passenger {
     FFState fFState;
@@ -16,6 +18,14 @@ public class Passenger {
 
     public void addPoints(double point) {
         fFState.addPoints(point);
+    }
+
+    public FFState getfFState() {
+        return fFState;
+    }
+
+    public int getId() {
+        return Id;
     }
 
     @Override

@@ -1,5 +1,11 @@
 package com.epam.training.simulator;
 
+import com.epam.training.simulator.passengers.Group;
+import com.epam.training.simulator.trip.Flight;
+import com.epam.training.simulator.trip.Ticket;
+import com.epam.training.simulator.trip.Trip;
+import com.epam.training.simulator.trip.itinerary.Itinerary;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -11,8 +17,7 @@ public class Main {
     static Group egynyul = new Group(1);
 
     public static void main(String[] args) {
-        //ConsoleMenu menu = new ConsoleMenu();
-        //menu.startConsole();
+
         addSomeFlights(10);
         Trip bookedTrip = bookTrip(tesztnyulak, 5);
 

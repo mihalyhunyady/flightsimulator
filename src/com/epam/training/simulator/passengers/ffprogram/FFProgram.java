@@ -1,4 +1,4 @@
-package com.epam.training.simulator;
+package com.epam.training.simulator.passengers.ffprogram;
 
 
 public class FFProgram {
